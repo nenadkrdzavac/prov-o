@@ -14,7 +14,9 @@ If you wish to make comments regarding this document, please send them to public
                                 rdfs:label "W3C PROVenance Interchange Ontology (PROV-O)"@en ;
                                 rdfs:seeAlso <http://www.w3.org/TR/prov-o/> ,
                                              <http://www.w3.org/ns/prov> ;
-                                owl:versionInfo "Recommendation version 2013-04-30"@en .
+                                owl:versionInfo "Recommendation version 2013-04-30"@en ;
+                                :specializationOf <http://www.w3.org/ns/prov-o> ;
+                                :wasRevisionOf <http://www.w3.org/ns/prov-o-20130312> .
 
 #################################################################
 #    Annotation properties
@@ -203,6 +205,41 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
           :inverse "activityOfInfluence" .
 
 
+###  http://www.w3.org/ns/prov#addAttribute
+:addAttribute rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :generated ;
+              rdfs:comment "addA(a): addition of an attribute a." ;
+              rdfs:label "addAttribute" .
+
+
+###  http://www.w3.org/ns/prov#addConcept
+:addConcept rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :generated ;
+            rdfs:comment "addC(c): insertion of a new concept c in the changed ontology." ;
+            rdfs:label "addConcept" .
+
+
+###  http://www.w3.org/ns/prov#addLeafConcept
+:addLeafConcept rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf :generated ;
+                rdfs:comment "addLeaf(c, C_Parents): insertion of a leaf concept  c below the concepts in C_Parents." ;
+                rdfs:label "addLeafConcept" .
+
+
+###  http://www.w3.org/ns/prov#addRelationship
+:addRelationship rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :generated ;
+                 rdfs:comment "addR(r): insertion of a new relationship r." ;
+                 rdfs:label "addRelationship" .
+
+
+###  http://www.w3.org/ns/prov#addSubGraph
+:addSubGraph rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :generated ;
+             rdfs:comment "ddSubGraph(c_root, C_Sub): inserts a new subgraph with root c_root and concepts C_Sub." ;
+             rdfs:label "addSubGraph" .
+
+
 ###  http://www.w3.org/ns/prov#agent
 :agent rdf:type owl:ObjectProperty ;
        rdfs:subPropertyOf :influencer ;
@@ -251,6 +288,34 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
                            "This property is not functional because the many values could be at a variety of granularies (In this building, in this room, in that chair)."@en ;
             :inverse "locationOf" ;
             :sharesDefinitionWith :Location .
+
+
+###  http://www.w3.org/ns/prov#delAttribute
+:delAttribute rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :generated ;
+              rdfs:comment "delA(a): deletion of an existing attribute a." ;
+              rdfs:label "delAttribute" .
+
+
+###  http://www.w3.org/ns/prov#delConcept
+:delConcept rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :generated ;
+            rdfs:comment "delC(c): deletion of an existing concept c from the  old ontology version." ;
+            rdfs:label "delConcept" .
+
+
+###  http://www.w3.org/ns/prov#delRelationship
+:delRelationship rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :generated ;
+                 rdfs:comment "delR(r): deletion of an existing relationship r." ;
+                 rdfs:label "delRelationship" .
+
+
+###  http://www.w3.org/ns/prov#delSubGraph
+:delSubGraph rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf :generated ;
+             rdfs:comment "delSubGraph(c_root, C_Sub): removes an existing  subgraph with root c_root and concepts C_Sub." ;
+             rdfs:label "delSubGraph" .
 
 
 ###  http://www.w3.org/ns/prov#entity
@@ -445,6 +510,34 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
              :editorialNote "prov:invalidated is one of few inverse property defined, to allow Activity-oriented assertions in addition to Entity-oriented assertions."@en ;
              :inverse "wasInvalidatedBy" ;
              :sharesDefinitionWith :Invalidation .
+
+
+###  http://www.w3.org/ns/prov#mapAttribute
+:mapAttribute rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :generated ;
+              rdfs:comment "mapA(a1,a2): maps an attribute a1 of the first to an attribute a2 of the second ontology version." ;
+              rdfs:label "mapAttribute" .
+
+
+###  http://www.w3.org/ns/prov#mapConcept
+:mapConcept rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf :generated ;
+            rdfs:comment "mapC(c1,c2): maps a concept c1 of the first ontology version to a concept c2 of the second version." ;
+            rdfs:label "mapConcept" .
+
+
+###  http://www.w3.org/ns/prov#mapRelationship
+:mapRelationship rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf :generated ;
+                 rdfs:comment "mapR(r1,r2): maps a relationship r1 of the first  ontology version to a relationship r2 of the second  version." ;
+                 rdfs:label "mapRelationship" .
+
+
+###  http://www.w3.org/ns/prov#mergeConcept
+:mergeConcept rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :generated ;
+              rdfs:comment "merge(Source_C, target_c): merges multiple  source concepts Source_C into one target concept  target_c.." ;
+              rdfs:label "mergeConcept" .
 
 
 ###  http://www.w3.org/ns/prov#qualifiedAssociation
@@ -665,6 +758,13 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 :specializationOf rdf:type owl:ObjectProperty ;
                   rdfs:subPropertyOf :alternateOf ;
                   rdfs:domain :Entity .
+
+
+###  http://www.w3.org/ns/prov#splitConcept
+:splitConcept rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf :generated ;
+              rdfs:comment "split(source_c, Target_C): splits one source concept source_c into multiple target concepts Target_C." ;
+              rdfs:label "splitConcept" .
 
 
 ###  http://www.w3.org/ns/prov#used
@@ -944,102 +1044,11 @@ http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#term-Revision 23 April 
                              :qualifiedStart .
 
 
-###  http://www.w3.org/ns/prov-o#addAttribute
-:addAttribute rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf :generated ;
-              rdfs:comment "addA(a): addition of an attribute a." ;
-              rdfs:label "addAttribute" .
-
-
-###  http://www.w3.org/ns/prov-o#addConcept
-:addConcept rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf :generated ;
-            rdfs:comment "addC(c): insertion of a new concept c in the changed ontology." ;
-            rdfs:label "addConcept" .
-
-
-###  http://www.w3.org/ns/prov-o#addLeafConcept
-:addLeafConcept rdf:type owl:ObjectProperty ;
-                rdfs:subPropertyOf :generated ;
-                rdfs:comment "addLeaf(c, C_Parents): insertion of a leaf concept  c below the concepts in C_Parents." ;
-                rdfs:label "addLeafConcept" .
-
-
-###  http://www.w3.org/ns/prov-o#addRelationship
-:addRelationship rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf :generated ;
-                 rdfs:comment "addR(r): insertion of a new relationship r." ;
-                 rdfs:label "addRelationship" .
-
-
-###  http://www.w3.org/ns/prov-o#addSubGraph
-:addSubGraph rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf :generated ;
-             rdfs:comment "ddSubGraph(c_root, C_Sub): inserts a new subgraph with root c_root and concepts C_Sub." ;
-             rdfs:label "addSubGraph" .
-
-
-###  http://www.w3.org/ns/prov-o#delAttribute
-:delAttribute rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf :generated ;
-              rdfs:comment "delA(a): deletion of an existing attribute a." ;
-              rdfs:label "delAttribute" .
-
-
-###  http://www.w3.org/ns/prov-o#delConcept
-:delConcept rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf :generated ;
-            rdfs:comment "delC(c): deletion of an existing concept c from the  old ontology version." ;
-            rdfs:label "delConcept" .
-
-
-###  http://www.w3.org/ns/prov-o#delRelationship
-:delRelationship rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf :generated ;
-                 rdfs:comment "delR(r): deletion of an existing relationship r." ;
-                 rdfs:label "delRelationship" .
-
-
-###  http://www.w3.org/ns/prov-o#delSubGraph
-:delSubGraph rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf :generated ;
-             rdfs:comment "delSubGraph(c_root, C_Sub): removes an existing  subgraph with root c_root and concepts C_Sub." ;
-             rdfs:label "delSubGraph" .
-
-
-###  http://www.w3.org/ns/prov-o#mapAttribute
-:mapAttribute rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf :generated ;
-              rdfs:comment "mapA(a1,a2): maps an attribute a1 of the first to an attribute a2 of the second ontology version." ;
-              rdfs:label "mapAttribute" .
-
-
-###  http://www.w3.org/ns/prov-o#mapConcept
-:mapConcept rdf:type owl:ObjectProperty ;
-            rdfs:subPropertyOf :generated ;
-            rdfs:comment "mapC(c1,c2): maps a concept c1 of the first ontology version to a concept c2 of the second version." ;
-            rdfs:label "mapConcept" .
-
-
-###  http://www.w3.org/ns/prov-o#mapRelationship
-:mapRelationship rdf:type owl:ObjectProperty ;
-                 rdfs:subPropertyOf :generated ;
-                 rdfs:comment "mapR(r1,r2): maps a relationship r1 of the first  ontology version to a relationship r2 of the second  version." ;
-                 rdfs:label "mapRelationship" .
-
-
-###  http://www.w3.org/ns/prov-o#mergeConcept
-:mergeConcept rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf :generated ;
-              rdfs:comment "merge(Source_C, target_c): merges multiple  source concepts Source_C into one target concept  target_c.." ;
-              rdfs:label "mergeConcept" .
-
-
-###  http://www.w3.org/ns/prov-o#splitConcept
-:splitConcept rdf:type owl:ObjectProperty ;
-              rdfs:subPropertyOf :generated ;
-              rdfs:comment "split(source_c, Target_C): splits one source concept source_c into multiple target concepts Target_C." ;
-              rdfs:label "splitConcept" .
+###  http://www.w3.org/ns/prov-o#delLeaf
+:delLeaf rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf :generated ;
+         rdfs:comment "delLeaf(c, C_Parents): deletion of a leaf concept c situated below the concepts in C_Parents." ;
+         rdfs:label "delLeaf" .
 
 
 #################################################################
@@ -1565,9 +1574,7 @@ A primary source relation is a particular case of derivation of secondary materi
 
 
 ###  http://www.w3.org/ns/prov-o#
-<http://www.w3.org/ns/prov-o#> rdf:type owl:NamedIndividual ;
-                               :specializationOf <http://www.w3.org/ns/prov-o> ;
-                               :wasRevisionOf <http://www.w3.org/ns/prov-o-20130312> .
+<http://www.w3.org/ns/prov-o#> rdf:type owl:NamedIndividual .
 
 
 #################################################################
@@ -1582,8 +1589,8 @@ A primary source relation is a particular case of derivation of secondary materi
 
 
 :specializationOf :constraints "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig"^^xsd:anyURI ;
-                  rdfs:label "specializationOf" ;
                   rdfs:seeAlso :alternateOf ;
+                  rdfs:label "specializationOf" ;
                   rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
                   :category "expanded" ;
                   :dm "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-specialization"^^xsd:anyURI ;
