@@ -22,6 +22,21 @@
                                                                        rdfs:seeAlso <https://raw.githubusercontent.com/OpenEnergyPlatform/ontology/master/src/ontology/imports/iao-extracted.owl> .
 
 
+###  http://doi.org/10.1610/history-iao-extracted#b5d01533c01307b2b83bcfaaf1c861f3_addC
+:b5d01533c01307b2b83bcfaaf1c861f3_addC rdf:type owl:NamedIndividual ,
+                                                prov:Activity ;
+                                       prov:addConcept <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                       prov:atLocation :b5d01533c01307b2b83bcfaaf1c861f3_addC_location ;
+                                       prov:wasAssociatedWith :contodiff ;
+                                       rdfs:label "b5d01533c01307b2b83bcfaaf1c861f3_addC" .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#b5d01533c01307b2b83bcfaaf1c861f3_addC_location
+:b5d01533c01307b2b83bcfaaf1c861f3_addC_location rdf:type owl:NamedIndividual ,
+                                                         prov:Location ;
+                                                rdfs:label "b5d01533c01307b2b83bcfaaf1c861f3_addC_location" .
+
+
 ###  http://doi.org/10.1610/history-iao-extracted#bc9a6ab5277b39808a3949e2fa5211fb_addC
 :bc9a6ab5277b39808a3949e2fa5211fb_addC rdf:type owl:NamedIndividual ,
                                                 prov:Activity ;
