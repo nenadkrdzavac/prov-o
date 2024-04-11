@@ -156,6 +156,21 @@
                                                                                                  prov:dm <https://raw.githubusercontent.com/nenadkrdzavac/prov-o/main/187f96c63b028c6a8b9ad3ea84befd39_delLeaf.ttl> .
 
 
+###  http://doi.org/10.1610/history-iao-extracted#3cf97021f14c97ddb7799edd1022f858_delR
+<http://doi.org/10.1610/history-iao-extracted#3cf97021f14c97ddb7799edd1022f858_delR> rdf:type owl:NamedIndividual ,
+                                                                                              prov:Activity ;
+                                                                                     prov:atLocation <http://doi.org/10.1610/history-iao-extracted#3cf97021f14c97ddb7799edd1022f858_delR_location> ;
+                                                                                     prov:delRelationship <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                                                                     prov:wasAssociatedWith :contodiff ;
+                                                                                     rdfs:label "3cf97021f14c97ddb7799edd1022f858_delR" .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#3cf97021f14c97ddb7799edd1022f858_delR_location
+<http://doi.org/10.1610/history-iao-extracted#3cf97021f14c97ddb7799edd1022f858_delR_location> rdf:type owl:NamedIndividual ,
+                                                                                                       prov:Location ;
+                                                                                              rdfs:label "3cf97021f14c97ddb7799edd1022f858_delR_location" .
+
+
 ###  http://doi.org/10.1610/history-iao-extracted#3e6226841c0fae0da98212eb43d70166_delR
 <http://doi.org/10.1610/history-iao-extracted#3e6226841c0fae0da98212eb43d70166_delR> rdf:type owl:NamedIndividual ,
                                                                                               prov:Activity ;
