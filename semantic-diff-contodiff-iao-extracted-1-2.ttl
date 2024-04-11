@@ -38,6 +38,21 @@
                                                 rdfs:label "b5d01533c01307b2b83bcfaaf1c861f3_addC_location" .
 
 
+###  http://doi.org/10.1610/history-iao-extracted#baf44bb10344d53ba7b5609d07f70a68_addR
+:baf44bb10344d53ba7b5609d07f70a68_addR rdf:type owl:NamedIndividual ,
+                                                prov:Activity ;
+                                       prov:addRelationship <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                       prov:atLocation :baf44bb10344d53ba7b5609d07f70a68_addR_location ;
+                                       prov:wasAssociatedWith :contodiff ;
+                                       rdfs:label "baf44bb10344d53ba7b5609d07f70a68_addR" .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#baf44bb10344d53ba7b5609d07f70a68_addR_location
+:baf44bb10344d53ba7b5609d07f70a68_addR_location rdf:type owl:NamedIndividual ,
+                                                         prov:Location ;
+                                                rdfs:label "baf44bb10344d53ba7b5609d07f70a68_addR_location" .
+
+
 ###  http://doi.org/10.1610/history-iao-extracted#bc9a6ab5277b39808a3949e2fa5211fb_addC
 :bc9a6ab5277b39808a3949e2fa5211fb_addC rdf:type owl:NamedIndividual ,
                                                 prov:Activity ;
@@ -90,6 +105,21 @@
                     prov:SoftwareAgent ;
            rdfs:comment "contodiff" ;
            prov:dm <https://github.com/dbs-leipzig/conto_diff> .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#d1c705b2acdeb161d90481ab59cadb15_addR
+:d1c705b2acdeb161d90481ab59cadb15_addR rdf:type owl:NamedIndividual ,
+                                                prov:Activity ;
+                                       prov:addRelationship <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                       prov:atLocation :d1c705b2acdeb161d90481ab59cadb15_addR_location ;
+                                       prov:wasAssociatedWith :contodiff ;
+                                       rdfs:label "d1c705b2acdeb161d90481ab59cadb15_addR" .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#d1c705b2acdeb161d90481ab59cadb15_addR_location
+:d1c705b2acdeb161d90481ab59cadb15_addR_location rdf:type owl:NamedIndividual ,
+                                                         prov:Location ;
+                                                rdfs:label "d1c705b2acdeb161d90481ab59cadb15_addR_location" .
 
 
 ###  http://doi.org/10.1610/history-iao-extracted#f1163c796cbd8231eb500fed0e2c3d56_addInner
