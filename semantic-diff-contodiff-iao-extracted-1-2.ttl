@@ -34,7 +34,7 @@
 :bc9a6ab5277b39808a3949e2fa5211fb_addC_location rdf:type owl:NamedIndividual ,
                                                          prov:Location ;
                                                 rdfs:label "bc9a6ab5277b39808a3949e2fa5211fb_addC_location" ;
-                                                prov:dm <C:\Users\KrdzavacN\TBCFreeWorkspace\TopBraid\prov-o-mark\bc9a6ab5277b39808a3949e2fa5211fb_addC.ttl> .
+                                                prov:dm <https://raw.githubusercontent.com/nenadkrdzavac/prov-o/main/bc9a6ab5277b39808a3949e2fa5211fb_addC.ttl> .
 
 
 ###  http://doi.org/10.1610/history-iao-extracted#cb1f009aaac0439427afeedb2409474a_delC
@@ -50,7 +50,7 @@
 :cb1f009aaac0439427afeedb2409474a_delC_location rdf:type owl:NamedIndividual ,
                                                          prov:Location ;
                                                 rdfs:label "cb1f009aaac0439427afeedb2409474a_delC_location" ;
-                                                prov:dm <C:\Users\KrdzavacN\TBCFreeWorkspace\TopBraid\prov-o-mark\cb1f009aaac0439427afeedb2409474a_delC.ttl> .
+                                                prov:dm <https://raw.githubusercontent.com/nenadkrdzavac/prov-o/main/cb1f009aaac0439427afeedb2409474a_delC.ttl> .
 
 
 ###  http://doi.org/10.1610/history-iao-extracted#contodiff
@@ -73,7 +73,7 @@
 :f1163c796cbd8231eb500fed0e2c3d56_addInner_location rdf:type owl:NamedIndividual ,
                                                              prov:Location ;
                                                     rdfs:label "f1163c796cbd8231eb500fed0e2c3d56_addInner_location" ;
-                                                    prov:dm <C:\Users\KrdzavacN\TBCFreeWorkspace\TopBraid\prov-o-mark\f1163c796cbd8231eb500fed0e2c3d56_addInner.ttl> .
+                                                    prov:dm <https://raw.githubusercontent.com/nenadkrdzavac/prov-o/main/f1163c796cbd8231eb500fed0e2c3d56_addInner.ttl> .
 
 
 ###  http://doi.org/10.1610/history-iao-extracted#0f0b5ac4ccb44e3bed3a6c799c8f8de8_delC
@@ -89,7 +89,7 @@
 <http://doi.org/10.1610/history-iao-extracted#0f0b5ac4ccb44e3bed3a6c799c8f8de8_delC_location> rdf:type owl:NamedIndividual ,
                                                                                                        prov:Location ;
                                                                                               rdfs:label "0f0b5ac4ccb44e3bed3a6c799c8f8de8_delC_location" ;
-                                                                                              prov:dm <C:\Users\KrdzavacN\TBCFreeWorkspace\TopBraid\prov-o-mark\0f0b5ac4ccb44e3bed3a6c799c8f8de8_delC.ttl> .
+                                                                                              prov:dm <https://raw.githubusercontent.com/nenadkrdzavac/prov-o/main/0f0b5ac4ccb44e3bed3a6c799c8f8de8_delC.ttl> .
 
 
 ###  http://doi.org/10.1610/history-iao-extracted#02fff32ff595f45078bf3397216fe2a0_delR
@@ -105,7 +105,7 @@
 <http://doi.org/10.1610/history-iao-extracted#02fff32ff595f45078bf3397216fe2a0_delR_location> rdf:type owl:NamedIndividual ,
                                                                                                        prov:Location ;
                                                                                               rdfs:label "02fff32ff595f45078bf3397216fe2a0_delR_location" ;
-                                                                                              prov:dm <C:\Users\KrdzavacN\TBCFreeWorkspace\TopBraid\prov-o-mark\02fff32ff595f45078bf3397216fe2a0_delR.ttl> .
+                                                                                              prov:dm <https://raw.githubusercontent.com/nenadkrdzavac/prov-o/main/02fff32ff595f45078bf3397216fe2a0_delR.ttl> .
 
 
 ###  http://doi.org/10.1610/history-iao-extracted#187f96c63b028c6a8b9ad3ea84befd39_delLeaf
@@ -121,7 +121,7 @@
 <http://doi.org/10.1610/history-iao-extracted#187f96c63b028c6a8b9ad3ea84befd39_delLeaf_location> rdf:type owl:NamedIndividual ,
                                                                                                           prov:Location ;
                                                                                                  rdfs:label "187f96c63b028c6a8b9ad3ea84befd39_delLeaf_location" ;
-                                                                                                 prov:dm <C:\Users\KrdzavacN\TBCFreeWorkspace\TopBraid\prov-o-mark\187f96c63b028c6a8b9ad3ea84befd39_delLeaf.ttl> .
+                                                                                                 prov:dm <https://raw.githubusercontent.com/nenadkrdzavac/prov-o/main/187f96c63b028c6a8b9ad3ea84befd39_delLeaf.ttl> .
 
 
 ###  http://doi.org/10.1610/history-iao-extracted#3e6226841c0fae0da98212eb43d70166_delR
@@ -137,7 +137,7 @@
 <http://doi.org/10.1610/history-iao-extracted#3e6226841c0fae0da98212eb43d70166_delR_location> rdf:type owl:NamedIndividual ,
                                                                                                        prov:Location ;
                                                                                               rdfs:label "3e6226841c0fae0da98212eb43d70166_delR_location" ;
-                                                                                              prov:dm <C:\Users\KrdzavacN\TBCFreeWorkspace\TopBraid\prov-o-mark\3e6226841c0fae0da98212eb43d70166_delR.ttl> .
+                                                                                              prov:dm <https://raw.githubusercontent.com/nenadkrdzavac/prov-o/main/3e6226841c0fae0da98212eb43d70166_delR.ttl> .
 
 
 ###  http://doi.org/10.1610/history-iao-extracted#42c6448efab195d6e354b00ca0db71fa8910c0a8
@@ -171,7 +171,7 @@
 <http://doi.org/10.1610/history-iao-extracted#683564db518215476bdbc6c7ae8c2e93_addLeaf_location> rdf:type owl:NamedIndividual ,
                                                                                                           prov:Location ;
                                                                                                  rdfs:label "683564db518215476bdbc6c7ae8c2e93_addLeaf_location" ;
-                                                                                                 prov:dm <C:\Users\KrdzavacN\TBCFreeWorkspace\TopBraid\prov-o-mark\683564db518215476bdbc6c7ae8c2e93_addLeaf.ttl> .
+                                                                                                 prov:dm <https://raw.githubusercontent.com/nenadkrdzavac/prov-o/main/683564db518215476bdbc6c7ae8c2e93_addLeaf.ttl> .
 
 
 ###  http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6
