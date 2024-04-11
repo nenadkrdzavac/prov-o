@@ -172,6 +172,20 @@
                                                                                                       prov:dm <https://raw.githubusercontent.com/OpenEnergyPlatform/ontology/42c6448efab195d6e354b00ca0db71fa8910c0a8/src/ontology/imports/iao-extracted.owl> .
 
 
+###  http://doi.org/10.1610/history-iao-extracted#6833f1946ed5a534e3bb33fe01b0bc0d_move
+<http://doi.org/10.1610/history-iao-extracted#6833f1946ed5a534e3bb33fe01b0bc0d_move> rdf:type owl:NamedIndividual ,
+                                                                                              prov:Activity ;
+                                                                                     prov:atLocation <http://doi.org/10.1610/history-iao-extracted#6833f1946ed5a534e3bb33fe01b0bc0d_move_location> ;
+                                                                                     prov:move <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                                                                     prov:wasAssociatedWith :contodiff ;
+                                                                                     rdfs:label "6833f1946ed5a534e3bb33fe01b0bc0d_move" .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#6833f1946ed5a534e3bb33fe01b0bc0d_move_location
+<http://doi.org/10.1610/history-iao-extracted#6833f1946ed5a534e3bb33fe01b0bc0d_move_location> rdf:type owl:NamedIndividual ,
+                                                                                                       prov:Location .
+
+
 ###  http://doi.org/10.1610/history-iao-extracted#683564db518215476bdbc6c7ae8c2e93_addLeaf
 <http://doi.org/10.1610/history-iao-extracted#683564db518215476bdbc6c7ae8c2e93_addLeaf> rdf:type owl:NamedIndividual ,
                                                                                                  prov:Activity ;
