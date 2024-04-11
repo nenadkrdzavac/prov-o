@@ -172,6 +172,22 @@
                                                                                               prov:dm <https://raw.githubusercontent.com/nenadkrdzavac/prov-o/main/3e6226841c0fae0da98212eb43d70166_delR.ttl> .
 
 
+###  http://doi.org/10.1610/history-iao-extracted#30616e57b2e17414c94c7a0cff4cf1ca_delInner
+<http://doi.org/10.1610/history-iao-extracted#30616e57b2e17414c94c7a0cff4cf1ca_delInner> rdf:type owl:NamedIndividual ,
+                                                                                                  prov:Activity ;
+                                                                                         prov:atLocation <http://doi.org/10.1610/history-iao-extracted#30616e57b2e17414c94c7a0cff4cf1ca_delInner_location> ;
+                                                                                         prov:delInner <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
+                                                                                         prov:wasAssociatedWith :contodiff ;
+                                                                                         rdfs:label "30616e57b2e17414c94c7a0cff4cf1ca_delInner" .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#30616e57b2e17414c94c7a0cff4cf1ca_delInner_location
+<http://doi.org/10.1610/history-iao-extracted#30616e57b2e17414c94c7a0cff4cf1ca_delInner_location> rdf:type owl:NamedIndividual ,
+                                                                                                           prov:Location ;
+                                                                                                  rdfs:label "30616e57b2e17414c94c7a0cff4cf1ca_delInner_location" ;
+                                                                                                  prov:dm <https://raw.githubusercontent.com/nenadkrdzavac/prov-o/main/30616e57b2e17414c94c7a0cff4cf1ca_delInner.ttl> .
+
+
 ###  http://doi.org/10.1610/history-iao-extracted#40d53df9e5dfff7e4b5732ac79abec69_addR
 <http://doi.org/10.1610/history-iao-extracted#40d53df9e5dfff7e4b5732ac79abec69_addR> rdf:type owl:NamedIndividual ,
                                                                                               prov:Activity ;
