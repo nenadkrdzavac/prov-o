@@ -168,7 +168,8 @@
 ###  http://doi.org/10.1610/history-iao-extracted#3cf97021f14c97ddb7799edd1022f858_delR_location
 <http://doi.org/10.1610/history-iao-extracted#3cf97021f14c97ddb7799edd1022f858_delR_location> rdf:type owl:NamedIndividual ,
                                                                                                        prov:Location ;
-                                                                                              rdfs:label "3cf97021f14c97ddb7799edd1022f858_delR_location" .
+                                                                                              rdfs:label "3cf97021f14c97ddb7799edd1022f858_delR_location" ;
+                                                                                              prov:dm <https://raw.githubusercontent.com/nenadkrdzavac/prov-o/main/3cf97021f14c97ddb7799edd1022f858_delR.ttl> .
 
 
 ###  http://doi.org/10.1610/history-iao-extracted#3e6226841c0fae0da98212eb43d70166_delR
