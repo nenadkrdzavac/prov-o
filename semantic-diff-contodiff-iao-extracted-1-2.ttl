@@ -140,6 +140,20 @@
                                                                                               prov:dm <https://raw.githubusercontent.com/nenadkrdzavac/prov-o/main/3e6226841c0fae0da98212eb43d70166_delR.ttl> .
 
 
+###  http://doi.org/10.1610/history-iao-extracted#40d53df9e5dfff7e4b5732ac79abec69_addR
+<http://doi.org/10.1610/history-iao-extracted#40d53df9e5dfff7e4b5732ac79abec69_addR> rdf:type owl:NamedIndividual ,
+                                                                                              prov:Activity ;
+                                                                                     prov:atLocation <http://doi.org/10.1610/history-iao-extracted#40d53df9e5dfff7e4b5732ac79abec69_addR_location> ;
+                                                                                     prov:wasAssociatedWith :contodiff .
+
+
+###  http://doi.org/10.1610/history-iao-extracted#40d53df9e5dfff7e4b5732ac79abec69_addR_location
+<http://doi.org/10.1610/history-iao-extracted#40d53df9e5dfff7e4b5732ac79abec69_addR_location> rdf:type owl:NamedIndividual ,
+                                                                                                       prov:Location ;
+                                                                                              rdfs:label "40d53df9e5dfff7e4b5732ac79abec69_addR_location" ;
+                                                                                              prov:dm <https://raw.githubusercontent.com/nenadkrdzavac/prov-o/main/40d53df9e5dfff7e4b5732ac79abec69_addR.ttl> .
+
+
 ###  http://doi.org/10.1610/history-iao-extracted#42c6448efab195d6e354b00ca0db71fa8910c0a8
 <http://doi.org/10.1610/history-iao-extracted#42c6448efab195d6e354b00ca0db71fa8910c0a8> rdf:type owl:NamedIndividual ,
                                                                                                  prov:Entity ;
