@@ -208,6 +208,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 ###  http://www.w3.org/ns/prov#addAttribute
 :addAttribute rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :generated ;
+              owl:inverseOf :delAttribute ;
               rdfs:comment """addA(a): addition of an attribute a [1].
 
 [1] Hartung, Michael, Anika Groß, and Erhard Rahm. \"Rule-based generation of diff evolution mappings between ontology versions.\" arXiv preprint arXiv:1010.0122 (2010).""" ;
@@ -227,12 +228,14 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 ###  http://www.w3.org/ns/prov#addInner
 :addInner rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :generated ;
+          owl:inverseOf :delInner ;
           rdfs:label "addInner" .
 
 
 ###  http://www.w3.org/ns/prov#addLeaf
 :addLeaf rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :generated ;
+         owl:inverseOf :delLeaf ;
          rdfs:comment """addLeaf(c, C_Parents): insertion of a leaf concept c below the concepts in C_Parents [1].
 
 [1] Hartung, Michael, Anika Groß, and Erhard Rahm. \"Rule-based generation of diff evolution mappings between ontology versions.\" arXiv preprint arXiv:1010.0122 (2010).""" ;
@@ -251,6 +254,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 ###  http://www.w3.org/ns/prov#addRelationship
 :addRelationship rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :generated ;
+                 owl:inverseOf :delRelationship ;
                  rdfs:comment """addR(r): insertion of a new relationship r [1].
 
 [1] Hartung, Michael, Anika Groß, and Erhard Rahm. \"Rule-based generation of diff evolution mappings between ontology versions.\" arXiv preprint arXiv:1010.0122 (2010).""" ;
@@ -260,6 +264,7 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 ###  http://www.w3.org/ns/prov#addSubGraph
 :addSubGraph rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :generated ;
+             owl:inverseOf :delSubGraph ;
              rdfs:comment """ddSubGraph(c_root, C_Sub): inserts a new subgraph with root c_root and concepts C_Sub [1].
 
 [1] Hartung, Michael, Anika Groß, and Erhard Rahm. \"Rule-based generation of diff evolution mappings between ontology versions.\" arXiv preprint arXiv:1010.0122 (2010).""" ;
