@@ -14,9 +14,7 @@ If you wish to make comments regarding this document, please send them to public
                                 rdfs:label "W3C PROVenance Interchange Ontology (PROV-O)"@en ;
                                 rdfs:seeAlso <http://www.w3.org/TR/prov-o/> ,
                                              <http://www.w3.org/ns/prov> ;
-                                owl:versionInfo "Recommendation version 2013-04-30"@en ;
-                                :specializationOf <http://www.w3.org/ns/prov-o> ;
-                                :wasRevisionOf <http://www.w3.org/ns/prov-o-20130312> .
+                                owl:versionInfo "Recommendation version 2013-04-30"@en .
 
 #################################################################
 #    Annotation properties
@@ -208,7 +206,6 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 ###  http://www.w3.org/ns/prov#addAttribute
 :addAttribute rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf :generated ;
-              owl:inverseOf :delAttribute ;
               rdfs:comment """addA(a): addition of an attribute a [1].
 
 [1] Hartung, Michael, Anika Groß, and Erhard Rahm. \"Rule-based generation of diff evolution mappings between ontology versions.\" arXiv preprint arXiv:1010.0122 (2010).""" ;
@@ -218,7 +215,6 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 ###  http://www.w3.org/ns/prov#addConcept
 :addConcept rdf:type owl:ObjectProperty ;
             rdfs:subPropertyOf :generated ;
-            owl:inverseOf :delConcept ;
             rdfs:comment """addC(c): insertion of a new concept c in the changed ontology [1].
 
 [1] Hartung, Michael, Anika Groß, and Erhard Rahm. \"Rule-based generation of diff evolution mappings between ontology versions.\" arXiv preprint arXiv:1010.0122 (2010).""" ;
@@ -228,14 +224,12 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 ###  http://www.w3.org/ns/prov#addInner
 :addInner rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf :generated ;
-          owl:inverseOf :delInner ;
           rdfs:label "addInner" .
 
 
 ###  http://www.w3.org/ns/prov#addLeaf
 :addLeaf rdf:type owl:ObjectProperty ;
          rdfs:subPropertyOf :generated ;
-         owl:inverseOf :delLeaf ;
          rdfs:comment """addLeaf(c, C_Parents): insertion of a leaf concept c below the concepts in C_Parents [1].
 
 [1] Hartung, Michael, Anika Groß, and Erhard Rahm. \"Rule-based generation of diff evolution mappings between ontology versions.\" arXiv preprint arXiv:1010.0122 (2010).""" ;
@@ -254,7 +248,6 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 ###  http://www.w3.org/ns/prov#addRelationship
 :addRelationship rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf :generated ;
-                 owl:inverseOf :delRelationship ;
                  rdfs:comment """addR(r): insertion of a new relationship r [1].
 
 [1] Hartung, Michael, Anika Groß, and Erhard Rahm. \"Rule-based generation of diff evolution mappings between ontology versions.\" arXiv preprint arXiv:1010.0122 (2010).""" ;
@@ -264,7 +257,6 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 ###  http://www.w3.org/ns/prov#addSubGraph
 :addSubGraph rdf:type owl:ObjectProperty ;
              rdfs:subPropertyOf :generated ;
-             owl:inverseOf :delSubGraph ;
              rdfs:comment """ddSubGraph(c_root, C_Sub): inserts a new subgraph with root c_root and concepts C_Sub [1].
 
 [1] Hartung, Michael, Anika Groß, and Erhard Rahm. \"Rule-based generation of diff evolution mappings between ontology versions.\" arXiv preprint arXiv:1010.0122 (2010).""" ;
@@ -1640,7 +1632,9 @@ A primary source relation is a particular case of derivation of secondary materi
 
 
 ###  http://www.w3.org/ns/prov-o#
-<http://www.w3.org/ns/prov-o#> rdf:type owl:NamedIndividual .
+<http://www.w3.org/ns/prov-o#> rdf:type owl:NamedIndividual ;
+                               :specializationOf <http://www.w3.org/ns/prov-o> ;
+                               :wasRevisionOf <http://www.w3.org/ns/prov-o-20130312> .
 
 
 #################################################################
@@ -1654,9 +1648,9 @@ A primary source relation is a particular case of derivation of secondary materi
                  :component "collections" .
 
 
-:specializationOf :constraints "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig"^^xsd:anyURI ;
+:specializationOf rdfs:label "specializationOf" ;
+                  :constraints "http://www.w3.org/TR/2013/REC-prov-constraints-20130430/#prov-dm-constraints-fig"^^xsd:anyURI ;
                   rdfs:seeAlso :alternateOf ;
-                  rdfs:label "specializationOf" ;
                   rdfs:isDefinedBy <http://www.w3.org/ns/prov-o#> ;
                   :dm "http://www.w3.org/TR/2013/REC-prov-dm-20130430/#term-specialization"^^xsd:anyURI ;
                   :category "expanded" ;
