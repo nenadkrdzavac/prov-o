@@ -164,8 +164,8 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
 
 ###  http://www.w3.org/ns/prov#wasRevisionOf
-:wasRevisionOf rdf:type owl:AnnotationProperty ;
-               rdfs:range :Entity .
+##   :wasRevisionOf rdf:type owl:AnnotationProperty ;
+##   rdfs:range :Entity .
 
 
 #################################################################
