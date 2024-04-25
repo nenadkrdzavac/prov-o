@@ -28,14 +28,14 @@
                                        prov:addConcept <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
                                        prov:atLocation :b5d01533c01307b2b83bcfaaf1c861f3_addC_location ;
                                        prov:wasAssociatedWith :contodiff ;
-                                       rdfs:label "b5d01533c01307b2b83bcfaaf1c861f3_addC" ;
-                                       prov:dm <https://raw.githubusercontent.com/nenadkrdzavac/prov-o/main/b5d01533c01307b2b83bcfaaf1c861f3_addC.ttl> .
+                                       rdfs:label "b5d01533c01307b2b83bcfaaf1c861f3_addC" .
 
 
 ###  http://doi.org/10.1610/history-iao-extracted#b5d01533c01307b2b83bcfaaf1c861f3_addC_location
 :b5d01533c01307b2b83bcfaaf1c861f3_addC_location rdf:type owl:NamedIndividual ,
                                                          prov:Location ;
-                                                rdfs:label "b5d01533c01307b2b83bcfaaf1c861f3_addC_location" .
+                                                rdfs:label "b5d01533c01307b2b83bcfaaf1c861f3_addC_location" ;
+                                                prov:dm <https://raw.githubusercontent.com/nenadkrdzavac/prov-o/main/b5d01533c01307b2b83bcfaaf1c861f3_addC.ttl> .
 
 
 ###  http://doi.org/10.1610/history-iao-extracted#baf44bb10344d53ba7b5609d07f70a68_addR
@@ -50,7 +50,8 @@
 ###  http://doi.org/10.1610/history-iao-extracted#baf44bb10344d53ba7b5609d07f70a68_addR_location
 :baf44bb10344d53ba7b5609d07f70a68_addR_location rdf:type owl:NamedIndividual ,
                                                          prov:Location ;
-                                                rdfs:label "baf44bb10344d53ba7b5609d07f70a68_addR_location" .
+                                                rdfs:label "baf44bb10344d53ba7b5609d07f70a68_addR_location" ;
+                                                prov:dm <https://raw.githubusercontent.com/nenadkrdzavac/prov-o/main/baf44bb10344d53ba7b5609d07f70a68_addR.ttl> .
 
 
 ###  http://doi.org/10.1610/history-iao-extracted#bc9a6ab5277b39808a3949e2fa5211fb_addC
@@ -256,6 +257,7 @@
                                                                                         prov:hadPrimarySource <http://doi.org/10.1610/history-iao-extracted#42c6448efab195d6e354b00ca0db71fa8910c0a8_iao-extracted> ;
                                                                                         prov:generatedAtTime "2023-11-27T16:11:51.000Z"^^xsd:dateTime ;
                                                                                         prov:value "add further terms to iao-extracted based on #1700" ;
+                                                                                        rdfs:comment "add further terms to iao-extracted based on #1700" ;
                                                                                         rdfs:label "42c6448efab195d6e354b00ca0db71fa8910c0a8" ;
                                                                                         prov:dm <https://github.com/OpenEnergyPlatform/ontology/commit/42c6448efab195d6e354b00ca0db71fa8910c0a8> .
 
@@ -304,16 +306,18 @@
                                                                                                  prov:Entity ;
                                                                                         prov:alternateOf :OpenEnergyPlatform_ontology_master_src_ontology_imports_iao-extracted ;
                                                                                         prov:hadPrimarySource <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6_iao-extracted> ;
+                                                                                        prov:wasRevisionOf <http://doi.org/10.1610/history-iao-extracted#42c6448efab195d6e354b00ca0db71fa8910c0a8> ;
                                                                                         prov:generatedAtTime "2023-11-30T10:58:44.000Z"^^xsd:dateTime ;
                                                                                         prov:value "update iao-extracted with journal article imported without hierarchy" ;
+                                                                                        rdfs:comment "updated iao-extracted with journal article imported without hierarchy" ;
                                                                                         rdfs:label "9d784dbb4810548940b76aff4a8790d6ad379bf6" ;
-                                                                                        rdfs:seeAlso <https://github.com/OpenEnergyPlatform/ontology/commit/9d784dbb4810548940b76aff4a8790d6ad379bf6> ;
-                                                                                        prov:wasRevisionOf <http://doi.org/10.1610/history-iao-extracted#42c6448efab195d6e354b00ca0db71fa8910c0a8> .
+                                                                                        rdfs:seeAlso <https://github.com/OpenEnergyPlatform/ontology/commit/9d784dbb4810548940b76aff4a8790d6ad379bf6> .
 
 
 ###  http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6_iao-extracted
 <http://doi.org/10.1610/history-iao-extracted#9d784dbb4810548940b76aff4a8790d6ad379bf6_iao-extracted> rdf:type owl:NamedIndividual ,
                                                                                                                prov:Entity ;
+                                                                                                      rdfs:comment "Update iao-extracted with journal article imported without hierarchy" ;
                                                                                                       rdfs:label "9d784dbb4810548940b76aff4a8790d6ad379bf6_iao-extracted" ;
                                                                                                       prov:dm <https://raw.githubusercontent.com/OpenEnergyPlatform/ontology/9d784dbb4810548940b76aff4a8790d6ad379bf6/src/ontology/imports/iao-extracted.owl> .
 
