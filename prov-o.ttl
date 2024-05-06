@@ -148,8 +148,8 @@ Note how the value of the unqualified influence (prov:wasGeneratedBy :activity1)
 
 
 ###  http://www.w3.org/ns/prov#specializationOf
-:specializationOf rdf:type owl:AnnotationProperty ;
-                  rdfs:range :Entity .
+#:specializationOf rdf:type owl:AnnotationProperty ;
+#                  rdfs:range :Entity .
 
 
 ###  http://www.w3.org/ns/prov#todo
